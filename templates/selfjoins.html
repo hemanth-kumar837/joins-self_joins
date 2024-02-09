@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>selfjoins</h1>
+        <table border="3px">
+            <tr>
+                <th>empno</th>
+                <th>ename</th>
+                <th>mgr</th>
+                <th>sal</th>
+                <th>comm</th>
+                <th>deptno</th>
+               
+            </tr>
+            {% for mgro in MGREMPOBJECTS %}
+                <tr>
+                    <td>{{mgro.empno}}</td>
+                    <td>{{mgro.ename}}</td>
+                   
+                    <td>{{mgro.mgr}}</td>
+                    <td>{{mgro.sal}}</td>
+                    <td>{{mgro.comm}}</td>
+                    <td>{{mgro.deptno}}</td>
+                    
+                </tr>
+            {%endfor %}
+
+        </table>
+
+
+
+    </center>
+</body>
+</html>

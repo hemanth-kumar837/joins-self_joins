@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+    <h1>equijoins</h1>
+    <table border="3px">
+        <tr>
+            <th>empno</th>
+            <th>ename</th>
+            <th>mgr</th>
+            <th>job</th>
+            
+        </tr>
+        {%for emp in emd %}
+            <tr>
+                <td>{{emp.empno}}</td>
+                <td>{{emp.ename}}</td>
+                <td>{{emp.mgr}}</td>
+                <td>{{emp.job}}</td>
+                
+            </tr>
+        {%endfor %}
+
+    </table>
+
+
+
+</center>
+</body>
+</html>
